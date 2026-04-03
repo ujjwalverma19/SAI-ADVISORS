@@ -27,9 +27,8 @@ const Navbar = () => {
       borderBottom: scrolled ? '1px solid rgba(255, 255, 255, 0.06)' : '1px solid transparent',
     }}>
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', fontWeight: '700', fontSize: '1.3rem', color: 'white' }}>
-          <ShieldCheck size={28} color="#ffffff" />
-          <span style={{ letterSpacing: '-0.3px' }}>Sai Advisors</span>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <img src="/logo.png" alt="Sai Advisors Logo" style={{ height: '45px', width: 'auto', objectFit: 'contain' }} />
         </div>
 
         <div style={{ display: 'none' }} className="mobile-menu-btn" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
